@@ -1,0 +1,49 @@
+<app-component-header-alert></app-component-header-alert>
+<div class="main-container">
+  <app-component-header></app-component-header>
+  <nav class="subnav">
+    <app-component-subnav></app-component-subnav>
+  </nav>
+  <div class="content-container">
+    <div class="content-area">
+      <h3>Action editor</h3>
+      <br>
+
+      <app-ad-banner [ads]="ads"></app-ad-banner>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <clr-accordion>
+        <clr-accordion-panel *ngFor="let panel of data">
+          <clr-accordion-title>{{panel.title}}</clr-accordion-title>
+          <clr-accordion-content *clrIfExpanded>
+            content of {{panel.title}}
+          </clr-accordion-content>
+        </clr-accordion-panel>
+      </clr-accordion>
+    </div>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <app-component-sidebar></app-component-sidebar>
+      </section>
+    </nav>
+  </div>
+</div>

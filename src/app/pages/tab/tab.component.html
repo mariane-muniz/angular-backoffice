@@ -1,0 +1,40 @@
+<app-component-header-alert></app-component-header-alert>
+<div class="main-container">
+  <app-component-header></app-component-header>
+  <nav class="subnav">
+    <app-component-subnav></app-component-subnav>
+  </nav>
+  <div class="content-container">
+    <div class="content-area">
+
+      <clr-tabs>
+        <clr-tab>
+          <button clrTabLink id="link1">Tab1</button>
+          <clr-tab-content id="content1" *clrIfActive>
+            <div class="card">
+              <div class="card-block">
+                Conteudo 1
+              </div>
+            </div>
+          </clr-tab-content>
+        </clr-tab>
+        <clr-tab>
+          <button clrTabLink id="link-2">Tab2</button>
+          <clr-tab-content id="content-2" *clrIfActive>
+            <div class="card">
+              <div class="card-block">
+                Conteudo 2
+              </div>
+            </div>
+          </clr-tab-content>
+        </clr-tab>
+      </clr-tabs>
+
+    </div>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <app-component-sidebar></app-component-sidebar>
+      </section>
+    </nav>
+  </div>
+</div>

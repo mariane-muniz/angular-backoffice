@@ -1,0 +1,24 @@
+<app-component-header-alert></app-component-header-alert>
+<div class="main-container">
+  <app-component-header></app-component-header>
+  <nav class="subnav">
+    <app-component-subnav></app-component-subnav>
+  </nav>
+  <div class="content-container">
+    <div class="content-area">
+      <h2>{{title}}</h2>
+      <app-component-table-actions [selected]="selected"></app-component-table-actions>
+      <app-component-table
+        [selected]="selected"
+        [fields]="fields"
+        [values]="values"
+        [displayPagination]="true">
+      </app-component-table>
+    </div>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <app-component-sidebar></app-component-sidebar>
+      </section>
+    </nav>
+  </div>
+</div>

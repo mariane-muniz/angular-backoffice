@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Parameter",
+    "type": "table"
+  },
+  {
+    "title": "Validators"
+  },
+  {
+    "title": "Actuators"
+  },
+  {
+    "title": "Responders"
+  }
+]
